@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="kayweb.css">
+  <script type="text/javascript" src="kay_script.js"></script>
+  <title>KAY LIANG</title>
+  <link rel="icon" type="image/png" href="images/sprites/sprite_3.png">
+ 
+ <script type="text/javascript">
+
+var random_places_array = ['place1.png', 'place2.png', 'place3.png', 'place4.png', 'place5.png'];
+    
+function getRandomImage(imgAr, path) {
+    path = path || 'images/places/';
+    var num = Math.floor( Math.random() * imgAr.length );
+    var img = imgAr[ num ];
+    var imgStr = '<img src="' + path + img + '" alt = "">';
+    document.write(imgStr); document.close();
+}
+
+</script>
+
+</head>
+
+<body>
+		<div class="nav">
+			<ul id="nav_buttons">
+				<li> <a href="index.html">
+					<img src="images/logo.png"></a>
+				</li>
+				<li> <a href="people.html">
+					<img src="images/people.png"></a>
+				</li>
+				<li> <a href="places.html">
+					<img src="images/places.png"></a>
+				</li>
+				<li> <a href="things.html">
+					<img src="images/things.png"></a>
+				</li>
+				<li> <a href="about.html">
+					<img src="images/about.png"></a>
+				</li>
+			</ul>
+		</div>
+		<div class="main_page">
+			<img id="large_box" src="images/page_box.png">
+			<div class="random_place">
+				 <script type="text/javascript">getRandomImage(random_places_array, 'images/places/')</script>
+				</div>
+			<div class="sprite_select">
+				<img src="images/sprites/sprite_15.png" id="draggable">
+				<img src="images/sprites/sprite_7.png" id="draggable1">
+				<img src="images/sprites/sprite_12.png" id="draggable2">
+				<img src="images/sprites/sprite_3.png" id="draggable3">
+				<img src="images/sprites/sprite_21.png" id="draggable4">
+				<img src="images/sprites/sprite_14.png" id="draggable5">
+				<img src="images/sprites/sprite_17.png" id="draggable6">
+				<img src="images/sprites/sprite_11.png" id="draggable7">
+				<img src="images/sprites/sprite_2.png" id="draggable8">
+				<img src="images/sprites/sprite_18.png" id="draggable9">
+				<img src="images/sprites/sprite_10.png" id="draggable10">
+				<img src="images/sprites/sprite_23.png" id="draggable11">
+				<img src="images/sprites/sprite_20.png" id="draggable12">
+				<img src="images/sprites/sprite_16.png" id="draggable13">
+				<img src="images/sprites/sprite_24.png" id="draggable14">
+				<img src="images/sprites/sprite_22.png" id="draggable15">
+				<img src="images/sprites/sprite_19.png" id="draggable16">
+
+			</div>
+
+
+
+
+		</div>
+
+</body>

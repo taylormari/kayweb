@@ -1,0 +1,196 @@
+body {
+  background-image:    url("images/grid_pattern.png");
+  background-repeat: repeat;
+
+  outline:    0.0rem solid hsla(1000, 0%, 0%, 1);
+  margin:          unset;
+  box-sizing:      unset;
+  padding:         unset;
+  color:           unset;
+  text-decoration: unset;
+  flex-wrap: wrap;
+
+}
+
+/*----navigation buttons----*/
+.nav {
+
+}
+
+.nav li {
+	
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 15px;
+}
+
+#nav_buttons {
+	background: unset;
+	
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+
+
+}
+
+li {
+	
+}
+
+/*li a:hover {
+	cursor: 
+	}
+*/
+img {
+	max-width: 150px
+	
+}
+
+/*----main page----*/
+.main_page {
+	display: flex;
+	justify-content: center;
+}
+
+#large_box {
+	max-width: 90vw;
+	position: absolute;
+
+	background-image: url(images/page_box.png);
+	background-position: center;
+	background-size: cover;
+
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+}
+
+#narrow_box {
+	max-width: 90vw;
+	max-height: 75vh;
+	position: absolute;
+	background-image: url(images/page_box.png);
+	background-position: center;
+	background-size: cover;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+}
+
+.gallery_img {
+	position: absolute;
+	top: 35vh;
+	left: 15vw;
+	z-index: 2;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+
+}
+
+.gallery_img img {
+	padding: 10px;
+	max-width: 250px;
+	max-height: 300px;
+}
+
+.textbox {
+	position: absolute;
+	z-index: 2;
+	margin-top: 30px;
+	max-width: 450px;
+}
+
+p {
+	font-weight: normal;
+	font-size: 18px;
+	font-family: sans-serif;
+	line-height: 30px;
+}
+
+/*---main page random image---*/
+
+.random_place {
+	position: absolute;
+	display: block;
+	text-align: center;
+	z-index: 2;
+}
+
+.random_place img {
+	max-width: 70%;
+	margin-top: 10vh;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*----main page sprites----*/
+
+.sprite_select {
+	max-width: 60vw;
+	margin-top: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	z-index: 3;
+}
+
+.sprite_select img {
+	max-width: 100px;
+	max-height: 100px;
+
+}
+/*----phone size----*/
+
+@media only screen and (max-width: 750px) {
+
+body {
+	background-image: unset;
+	background-color: #FF685D;
+}
+
+#large_box {
+	height: 150vh;
+	position: absolute;
+	background-image: unset;
+	background-position: center;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+
+}
+
+.gallery_img {
+	position: absolute;
+	top: 75vh;
+	left: 25vw;
+	z-index: 2;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+
+}
+
+#narrow_box {
+	height: 100vh;
+	position: absolute;
+	background-image: unset;
+	background-position: center;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+
+}
+
+.textbox {
+	max-width: 70vw;
+}
+
+p {
+	font-size: 15px;
+}
